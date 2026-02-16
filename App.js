@@ -31,6 +31,11 @@ export default function App() {
     setInput(input.slice(0, -1));
   };
 
+  // Remove Character At Specific Index
+  const removeAtIndex = (index) => {
+    setInput(input.slice(0, index) + input.slice(index + 1));
+  };
+
   return (
     <View style={styles.container}>
 
